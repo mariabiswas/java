@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Encapsulation</title>
+</head>
+<body>
+<script>
+class Employee
+{
+constructor()
+{
+var Eid;
+var Ename;
+var Age;
+}
+
+getEmpID()
+{
+return this.Eid;
+}
+setEmpID(Eid)
+{
+this.Eid=Eid;
+}
+
+getEmpName()
+{
+return this.Ename;
+}
+setEmpName(ename)
+{
+this.Ename=ename;
+}
+getAge()
+{
+return this.Age;
+}
+setAge(Age)
+{
+if(Age<0 || Age>100)
+{
+alert("Invalid Age");
+}
+else
+
+{
+this.Age=Age;
+}
+}
+
+}
+var e1=new Employee();
+e1.setEmpID(45);
+e1.setEmpName("Srinivas");
+e1.setAge(45);
+document.write("EID EName Age");
+document.write("<br/>");
+document.write("=================");
+document.write("<br/>");
+document.write(e1.getEmpID()+" "+e1.getEmpName()+" "+e1.getAge());
+</script>
+</body>
+</html>

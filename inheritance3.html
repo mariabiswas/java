@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>inheritance</title>
+</head>
+<body>
+<script>
+class A
+{
+constructor (fname)
+{
+this.fname=fname;
+}
+}
+class B extends A{
+constructor(fname,lname)
+{
+super(fname);
+this.lname=lname;
+}
+}
+class C extends B
+{
+constructor(fname,lname,location)
+{
+super(fname,lname);
+this.location=location;
+}
+display()
+{
+document.write(this.fname+" "+this.lname+" "+this.location);
+}
+}
+
+var ch1=new C("srinivas","rao","india");
+ch1.display();
+</script>
+</body>
+</html>

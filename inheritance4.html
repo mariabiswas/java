@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		class Animal{
+			constructor(legs){
+				this.legs=legs;
+
+			}
+			walk(){
+				document.write("Animals will walk");
+			}
+		}
+
+		class Birds extends Animal{
+			constructor(legs){
+				super(legs);
+			}
+			fly(){
+				document.write("Birds will fly");
+			}
+
+
+
+		}
+		var x= new Birds(2);
+		x.fly();
+		x.walk();
+
+	</script>
+	<title>inheritance</title>
+</head>
+<body>
+
+</body>
+</html>

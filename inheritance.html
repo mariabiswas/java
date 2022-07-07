@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>inheritance</title>
+</head>
+<body>
+<script>
+
+//parent class
+class Car{
+constructor()
+{
+this.companyname="BMW";
+}
+}
+//child class
+class Vehicle extends Car
+{
+constructor(name,price)
+{
+super();
+this.name=name;
+this.price=price;
+}
+}
+var veh=new Vehicle("Mercedes","50000");
+document.write(veh.companyname+" "+veh.name+" "+veh.price);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		
+		class Student{
+			display(){
+				document.write("student display");
+			}
+
+
+		}
+		class Teacher extends Student{
+			display(){
+				document.write("teacher display");
+			}
+
+		}
+		
+		//var y= new Teacher();
+		//y.display();
+		var x=[new Student(), new Teacher()];
+		x.forEach(function(message){
+			message.display()
+		});
+
+			
+			
+	</script>
+	<title>polymorphism</title>
+</head>
+<body>
+
+</body>
+</html>
